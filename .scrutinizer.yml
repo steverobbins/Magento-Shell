@@ -29,7 +29,7 @@ coding_style:
     php:
         spaces:
             around_operators:
-                concatenation: false
+                concatenation: true
         braces:
             classes_functions:
                 class: new-line

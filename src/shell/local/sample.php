@@ -20,9 +20,11 @@ class Local_Shell_SampleScript extends Local_Shell_Abstract
         foreach ($products as $product) {
             $bar->update(++$i);
             // $product->setDescription(Mage::helper('core')->stripTags($product->getDescription()));
-            if (mt_rand(0, 19) > 1) { // try
+            if (mt_rand(0, 19) > 1) {
+                //try
                 // $product->save();
-            } else { // catch
+            } else {
+                //catch
                 $this->log->err('An error occured while saving product ' . $product['id']);
             }
             sleep(1);
