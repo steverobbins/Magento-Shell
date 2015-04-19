@@ -6,7 +6,7 @@ class Local_Shell_SampleScript extends Local_Shell_Abstract
 {
     /**
      * Do the thing
-     * 
+     *
      * @return void
      */
     public function run()
@@ -22,7 +22,7 @@ class Local_Shell_SampleScript extends Local_Shell_Abstract
             // $product->setDescription(Mage::helper('core')->stripTags($product->getDescription()));
             if (mt_rand(0, 19) > 1) { // try
                 // $product->save();
-            } else { // catch                
+            } else { // catch
                 $this->log->err('An error occured while saving product ' . $product['id']);
             }
             sleep(1);
@@ -33,7 +33,7 @@ class Local_Shell_SampleScript extends Local_Shell_Abstract
 
     /**
      * Pretend we're getting some products
-     * 
+     *
      * @return array
      */
     public function getFakeProductCollection()
