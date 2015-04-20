@@ -4,6 +4,22 @@ require_once 'abstract.php';
 
 class Local_Shell_SampleScript extends Local_Shell_Abstract
 {
+    protected $_messages = array(
+        'Compensating',
+        'Conjugating',
+        'Creating',
+        'Deleting',
+        'Editing',
+        'Emaciating',
+        'Hacking',
+        'Masticating',
+        'Recombobulating',
+        'Reticulating',
+        'Saving',
+        'Updating',
+        'Uploading',
+    );
+
     /**
      * Do the thing
      *
@@ -23,7 +39,7 @@ class Local_Shell_SampleScript extends Local_Shell_Abstract
         $bar = $this->progressBar($count);
         for ($i = 1; $i <= $count; $i++) {
             usleep(mt_rand(200000, 1000000));
-            $bar->update($i);
+            $bar->update($i, $this->_messages[mt_rand(0, count($this->_messages) - 1)]);
         }
         $bar->finish();
     }

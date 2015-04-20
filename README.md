@@ -87,4 +87,4 @@ Fork this repository and send a pull request to the `dev` branch
 
 # License
 
-[Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
+[WTF Public License 2.0](http://wtfpl2.com/)
