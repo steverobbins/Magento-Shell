@@ -3,7 +3,8 @@ Magento Shell
 
 Add some style to your Magento scripts.
 
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/steverobbins/Magento-Shell/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/steverobbins/Magento-Shell/?branch=master)
+[![Master Build Status](https://img.shields.io/travis/steverobbins/Magento-Shell/master.svg?style=flat-square)](https://travis-ci.org/steverobbins/Magento-Shell)
+[![Master Code Quality](https://img.shields.io/scrutinizer/g/steverobbins/Magento-Shell/master.svg?style=flat-square)](https://scrutinizer-ci.com/g/steverobbins/Magento-Shell/?branch=master)
 
 ![Sample](http://i.imgur.com/dOpMopl.gif)
 

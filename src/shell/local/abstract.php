@@ -15,7 +15,7 @@ abstract class Local_Shell_Abstract extends Mage_Shell_Abstract
     /**
      * Script execution start time
      *
-     * @var integer
+     * @var double
      */
     protected $_timeStart;
 
@@ -36,11 +36,17 @@ abstract class Local_Shell_Abstract extends Mage_Shell_Abstract
         $this->initLog();
     }
 
+    /**
+     * Show execution time
+     */
     public function __destruct()
     {
         if ($this->_showExecutionTime) {
-            $this->log->debug('Execution time: '
-                . round(microtime(true) - $this->_timeStart, 3) . ' seconds');
+            $this->log->debug(
+                'Execution time: '
+                . round(microtime(true) - $this->_timeStart, 3)
+                . ' seconds'
+            );
         }
     }
 
