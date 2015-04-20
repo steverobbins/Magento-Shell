@@ -13,12 +13,41 @@ abstract class Local_Shell_Abstract extends Mage_Shell_Abstract
     public $log;
 
     /**
+     * Script execution start time
+     *
+     * @var double
+     */
+    protected $_timeStart;
+
+    /**
+     * Show how long the script took when it's finished
+     *
+     * @var boolean
+     */
+    protected $_showExecutionTime = true;
+
+    /**
      * Initialize application and parse input parameters
      */
     public function __construct()
     {
+        $this->_timeStart = (float) microtime(true);
         parent::__construct();
         $this->initLog();
+    }
+
+    /**
+     * Show execution time
+     */
+    public function __destruct()
+    {
+        if ($this->_showExecutionTime) {
+            $this->log->debug(
+                'Execution time: '
+                . round(microtime(true) - $this->_timeStart, 3)
+                . ' seconds'
+            );
+        }
     }
 
     /**

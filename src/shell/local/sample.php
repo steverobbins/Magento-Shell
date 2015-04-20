@@ -11,42 +11,21 @@ class Local_Shell_SampleScript extends Local_Shell_Abstract
      */
     public function run()
     {
-        $this->log->info('Script execution has started');
-        $products = $this->getFakeProductCollection();
-        $count = count($products);
-        $this->log->debug('Found ' . $count . ' product(s) to process');
+        $this->log->debug('These are');
+        $this->log->info('the different');
+        $this->log->notice('log levels');
+        $this->log->warn('you can');
+        $this->log->err('use.  Now');
+        $this->log->crit('look at');
+        $this->log->alert('this progress');
+        $this->log->emerg('bar.');
+        $count = 14;
         $bar = $this->progressBar($count);
-        $i = 0;
-        foreach ($products as $product) {
-            $bar->update(++$i);
-            // $product->setDescription(Mage::helper('core')->stripTags($product->getDescription()));
-            if (mt_rand(0, 19) > 1) {
-                //try
-                // $product->save();
-            } else {
-                //catch
-                $this->log->err('An error occured while saving product ' . $product['id']);
-            }
-            sleep(1);
+        for ($i = 1; $i <= $count; $i++) {
+            usleep(mt_rand(200000, 1000000));
+            $bar->update($i);
         }
         $bar->finish();
-        $this->log->info('Complete');
-    }
-
-    /**
-     * Pretend we're getting some products
-     *
-     * @return array
-     */
-    public function getFakeProductCollection()
-    {
-        $products = array();
-        for ($i = 1; $i < 21; $i++) {
-            $products[] = new Varien_Object(array(
-                'id'  => $i
-            ));
-        }
-        return $products;
     }
 }
 

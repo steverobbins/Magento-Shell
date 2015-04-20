@@ -1,18 +1,28 @@
 <?xml version="1.0"?>
 <ruleset name="Magento">
     <description>Magento extension ruleset based on PSR-2 but modified for Magento 1</description>
+    <rule ref="Generic.CodeAnalysis.EmptyStatement" />
+    <rule ref="Generic.CodeAnalysis.UnusedFunctionParameter" />
+    <rule ref="Generic.CodeAnalysis.UnconditionalIfStatement" />
+    <rule ref="Generic.CodeAnalysis.UselessOverridingMethod" />
+    <rule ref="Generic.ControlStructures.InlineControlStructure" />
+    <rule ref="Generic.Files.EndFileNewline" />
+    <rule ref="Generic.Files.LineEndings" />
+    <rule ref="Generic.Files.OneClassPerFile" />
+    <rule ref="Generic.Files.OneInterfacePerFile" />
+    <rule ref="Generic.Formatting.SpaceAfterCast" />
     <rule ref="PSR2">
-        <exclude name="PSR1.Classes.ClassDeclaration.MissingNamespace"/>
-        <exclude name="Squiz.Classes.ValidClassName.NotCamelCaps"/>
-        <exclude name="PSR2.Methods.MethodDeclaration.Underscore"/>
-        <exclude name="PSR2.Classes.PropertyDeclaration.Underscore"/>
-        <exclude name="PSR1.Files.SideEffects"/>
-        <exclude name="Generic.Files.LineLength"/>
+        <exclude name="PSR1.Classes.ClassDeclaration.MissingNamespace" />
+        <exclude name="Squiz.Classes.ValidClassName.NotCamelCaps" />
+        <exclude name="PSR2.Methods.MethodDeclaration.Underscore" />
+        <exclude name="PSR2.Classes.PropertyDeclaration.Underscore" />
+        <exclude name="PSR1.Files.SideEffects" />
+        <exclude name="Generic.Files.LineLength" />
     </rule>
     <rule ref="Generic.Files.LineLength">
         <properties>
-            <property name="lineLimit" value="120"/>
-            <property name="absoluteLineLimit" value=""/>
+            <property name="lineLimit" value="120" />
+            <property name="absoluteLineLimit" value="" />
         </properties>
     </rule>
 </ruleset>
