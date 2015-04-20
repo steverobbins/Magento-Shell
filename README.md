@@ -1,6 +1,10 @@
 Magento Shell
 ===
 
+## OMG COLORS
+
+![Drool](http://i.imgur.com/a2JyNnj.gif)
+
 Add some style to your Magento scripts.
 
 [![Master Build Status](https://img.shields.io/travis/steverobbins/Magento-Shell/master.svg?style=flat-square)](https://travis-ci.org/steverobbins/Magento-Shell)
