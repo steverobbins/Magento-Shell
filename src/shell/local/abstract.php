@@ -43,8 +43,8 @@ abstract class Local_Shell_Abstract extends Mage_Shell_Abstract
     {
         if ($this->_showExecutionTime) {
             $this->log->debug(
-                'Execution time: '
-                . round(microtime(true) - $this->_timeStart, 3)
+                'Complete in '
+                . $this->color(round(microtime(true) - $this->_timeStart, 3))->dark_gray()
                 . ' seconds'
             );
         }
@@ -89,5 +89,16 @@ abstract class Local_Shell_Abstract extends Mage_Shell_Abstract
             $start,
             $batches
         );
+    }
+
+    /**
+     * Color a string
+     *
+     * @param  string $message
+     * @return Colors_Color
+     */
+    public function color($message)
+    {
+        return new Colors_Color($message);
     }
 }
