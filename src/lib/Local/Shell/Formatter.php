@@ -1,12 +1,15 @@
 <?php
 
+/**
+ * PHP Terminal formatter
+ */
 class Local_Shell_Formatter extends Zend_Log_Formatter_Abstract
 {
     /**
-     * Factory for SD_ShopTo_Log_Formatter class
+     * Factory for Local_Shell_Formatter class
      *
      * @param  array|Zend_Config $options
-     * @return SD_ShopTo_Log_Formatter
+     * @return Local_Shell_Formatter
      */
     public static function factory($options)
     {

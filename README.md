@@ -10,7 +10,7 @@ Magento Shell
 
 Add some style to your Magento scripts.
 
-![Sample](http://i.imgur.com/69fHALL.gif)
+![Sample](http://i.imgur.com/gqs1UcS.gif)
 
 # Usage
 
@@ -80,6 +80,12 @@ class Local_Shell_MyScript extends Local_Shell_Abstract
     }
 }
 ```
+
+# Logging
+
+Output is automatically logged to `var/log/shell_local_<scriptName>.log`.
+
+Alternatively, you can specify your own log file by setting the public `$logFile` variable in you script.
 
 # Support
 

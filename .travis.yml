@@ -10,4 +10,4 @@ php:
 before_script:
   - curl -OL https://squizlabs.github.io/PHP_CodeSniffer/phpcs.phar
 script:
-  - php phpcs.phar -v --standard=./phpcs.xml --encoding=utf-8 ./src/lib/Local/ ./src/shell/local/
+  - php phpcs.phar -v --standard=./phpcs.xml --encoding=utf-8 ./src/lib/Local/ ./src/shell/local/abstract.php
