@@ -1,15 +1,13 @@
 {
-    "name": "kirchbergerknorr/Magento-Shell",
-    "description": "Magento colorful Shell",
+    "name": "steverobbins/magento-shell",
+    "description": "Magento Improved Shell",
     "keywords": ["magento"],
     "type": "magento-module",
-    "license":"OSL-3.0",
+    "license": "WTFPL",
     "authors": [
         {
-            "name": "Benedikt Volkmer",
-            "email": "bv@kirchbergerknorr.de"
+            "name": "Steve Robbins",
+            "email": "steven.j.robbins@gmail.com"
         }
-    ],
-    "require": {
-    }
+    ]
 }
