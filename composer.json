@@ -1,0 +1,15 @@
+{
+    "name": "kirchbergerknorr/Magento-Shell",
+    "description": "Magento colorful Shell",
+    "keywords": ["magento"],
+    "type": "magento-module",
+    "license":"OSL-3.0",
+    "authors": [
+        {
+            "name": "Benedikt Volkmer",
+            "email": "bv@kirchbergerknorr.de"
+        }
+    ],
+    "require": {
+    }
+}

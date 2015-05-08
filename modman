@@ -1,0 +1,4 @@
+src/lib/Colors/Color.php src/lib/Colors/Color.php
+src/lib/Local/Shell/Formatter.php src/lib/Local/Shell/Formatter.php
+src/shell/local/abstract.php src/shell/local/abstract.php
+src/shell/local/sample.php src/shell/local/sample.php
