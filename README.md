@@ -1,6 +1,8 @@
 Magento Shell
 ===
 
+[![Join the chat at https://gitter.im/steverobbins/Magento-Shell](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/steverobbins/Magento-Shell?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 [![Master Build Status](https://img.shields.io/travis/steverobbins/Magento-Shell/master.svg?style=flat-square)](https://travis-ci.org/steverobbins/Magento-Shell)
 [![Master Code Quality](https://img.shields.io/scrutinizer/g/steverobbins/Magento-Shell/master.svg?style=flat-square)](https://scrutinizer-ci.com/g/steverobbins/Magento-Shell/?branch=master)
 
